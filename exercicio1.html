@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio1</title>
+</head>
+
+<body>
+    <h1 id="variavel"> </h1>
+    <script>
+        var nome = prompt("Qual o seu nome?");
+        let idade = prompt("Qual a sua idade?");
+        if (idade < 0 || nome === null)
+        {
+            idade = "não informada";
+            nome = "Desconhecido";
+            document.getElementById('variavel').innerHTML=`Seja bem vindo, ${nome1}`;
+        } 
+        else
+        {
+        document.getElementById('variavel').innerHTML=`Olá " + nome + ", você tem " + idade + " anos!`;
+        }
+    </script>
+</body>
+</html>

@@ -1,13 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <h1> Exercicio 6</h1>
+    <h2 id="variavel"> text </h2>
+    <a href="index.html">Voltar pro Início</a>
     <script>
-        
+        let nota1 = Number(prompt("Digite a primeira nota:"));
+        let nota2 = Number(prompt("Digite a segunda nota:"));
+        let nota3 = Number(prompt("Digite a segunda nota:"));
+        let média = (nota1 + nota2 + nota3) / 3;
+        if (média > 6) 
+        {
+             document.getElementById('variavel').innerHTML=`Você foi aprovado :D`;
+        } else if (média == 6) 
+        {
+             document.getElementById('variavel').innerHTML=`Você ficou de recuperação`;
+            
+        }
+        else 
+        {
+             document.getElementById('variavel').innerHTML=`Você foi reprovado :(`;
+        }
+
+       
     </script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <h1> Exercicio 6</h1>
+    <h2 id="variavel">  </h2>
+    <a href="index.html">Voltar pro Início</a>
+    <script>
+        let numero = Number(prompt("Digite um número:"));
+        for (let i =1 ; i <=numero ; i++)
+        {
+            if (i%2===0)
+            {
+            document.getElementById('variavel').innerHTML+=`${i} é par<br>`; 
+            }
+        }
+    </script>
+</body>
+</html>

@@ -6,11 +6,14 @@
     <title>Document</title>
  </head>
  <body>
+    <h1> Exercicio 5</h1>
+    <h2 id="variavel"> text </h2>
+    <a href="index.html">Voltar pro Início</a>
     <script>    
       let num1 = Number(prompt("Digite o primeiro número:"))
       let num2 = Number(prompt("Digite o segundo número:"))
       let soma = num1 + num2
-      alert("A soma dos números é: " + soma)
+      document.getElementById('variavel').innerHTML=`A soma dos números é: ${soma}`;
     </script>
  </body>
  </html>

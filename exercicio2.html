@@ -6,13 +6,17 @@
     <title>Exercicio 2</title>
 </head>
 <body>
+    <h1> Exercicio 2</h1>
+    <h2 id="variavel"> Text </h2>
+    <a href="index.html">Voltar pro Início</a>
+    
     <script>
     let idade = prompt("Qual a sua idade?");
     if (idade >= 18) 
     {
-        alert("Você é maior de idade.");
+            document.getElementById('variavel').innerHTML=`Você é maior de idade.`;
     } else {
-        alert("Você é menor de idade.");
+            document.getElementById('variavel').innerHTML=`Você é menor de idade.`;
     }
     </script>
 </body>

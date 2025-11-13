@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="variavel"> aaa</h2>
+    <a href="index.html">Voltar pro Início</a>
+    <script>
+        const usuário =  
+        {
+            nome: prompt("Digite um nome:"),
+            idade: Number(prompt("Digite a idade:")),
+            cidade: prompt("Digite a cidade:")
+        }
+        document.getElementById('variavel').innerHTML=(`O usuário ${usuário.nome} tem ${usuário.idade} anos e mora em ${usuário.cidade}.`);
+    </script>
+</body>
+</html>

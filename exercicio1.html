@@ -8,19 +8,21 @@
 </head>
 
 <body>
-    <h1 id="variavel"> </h1>
+    <h1> Exercicio 1</h1>
+    <h2 id="variavel"> juka </h2>
+    <a href="index.html">Voltar pro Início</a>
     <script>
         var nome = prompt("Qual o seu nome?");
         let idade = prompt("Qual a sua idade?");
-        if (idade < 0 || nome === null)
+        if (idade > 0 || nome == null || idade == "" || nome == "" || idade == null)
         {
             idade = "não informada";
             nome = "Desconhecido";
-            document.getElementById('variavel').innerHTML=`Seja bem vindo, ${nome1}`;
+            document.getElementById('variavel').innerHTML=`Seu nome é ${nome}, Sua idade ${idade}.`;
         } 
         else
         {
-        document.getElementById('variavel').innerHTML=`Olá " + nome + ", você tem " + idade + " anos!`;
+        document.getElementById('variavel').innerHTML=`Olá ${nome}, você tem ${idade} anos!`
         }
     </script>
 </body>

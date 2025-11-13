@@ -6,10 +6,13 @@
     <title>exercicio4</title>
  </head>
  <body>
+      <h1> Exercicio 4</h1>
+      <h2 id="variavel"> Text </h2>
+      <a href="index.html">Voltar pro Início</a>
     <script>
         cel = prompt("Digite a temperatura em Celsius:");
         fahr = (cel * 9/5) + 32;
-        alert(cel + "°C equivalem a " + fahr + "°F");
+        document.getElementById('variavel').innerHTML=`${cel} °C equivalem a ${fahr} °F`;
     </script>
  </body>
  </html>

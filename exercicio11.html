@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="variavel"> aaaa</h2>
+    <a href="index.html">Voltar pro Início</a>
+    <script>
+        const usuário =  
+        {
+            numero: Number(prompt("Digite um número:"))
+        }
+        if( parseInt(numero /100) >= 1) 
+        {
+            let nota100 = i++;
+        }
+        if( parseInt(numero/50) >= 1) 
+        {
+            let nota50 = i++;
+        }
+        if( parseInt(numero/20) >= 1) 
+        {
+            let nota20 = i++;
+        }
+        if( parseInt(numero /10) >= 1) 
+        {
+            let nota10 = i++;
+        }
+        if( parseInt(numero /5) >= 1) 
+        {
+            let nota5 = i++;
+        }
+        if( parseInt(numero /2) >= 1) 
+        {
+            let nota2 = i++;
+        }
+        if( parseInt(numero /1)>= 1) 
+        {
+            let nota1 = i++;
+        }
+
+        document.getElementById('variavel').innerHTML=(`Notas de 100: ${nota100} <br> Notas de 50: ${nota50} <br> Notas de 20: ${nota20} <br> Notas de 10: ${nota10} <br> Notas de 5: ${nota5} <br> Notas de 2: ${nota2} <br> Notas de 1: ${nota1}`);
+    </script>
+</body>
+</html>

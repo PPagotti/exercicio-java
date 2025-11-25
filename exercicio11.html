@@ -6,43 +6,46 @@
     <title>Document</title>
 </head>
 <body>
-    <h2 id="variavel"> aaaa</h2>
+    <p id="variavel"></p>
     <a href="index.html">Voltar pro Início</a>
     <script>
-        const usuário =  
-        {
-            numero: Number(prompt("Digite um número:"))
-        }
+           
+        var numero = parseInt(prompt("Digite um valor em Reais: "));
         if( parseInt(numero /100) >= 1) 
         {
-            let nota100 = i++;
+            var nota100 = parseInt(numero /100);
+            parseInt numero = parseInt(numero - nota100 * 100);
         }
         if( parseInt(numero/50) >= 1) 
         {
-            let nota50 = i++;
+            var nota50 = parseInt( numero /50);
+            parseInt numero = parseInt (numero - nota50 * 50);
         }
         if( parseInt(numero/20) >= 1) 
         {
-            let nota20 = i++;
+            var nota20 = parseInt( numero /20);
+            parseInt numero = parseInt numero - nota20 * 20;
         }
-        if( parseInt(numero /10) >= 1) 
+        if( parseInt(parseInt numero /10) >= 1) 
         {
-            let nota10 = i++;
+            var nota10 = parseInt numero / 10;
+            parseInt numero = parseInt numero - nota10 * 10;
         }
-        if( parseInt(numero /5) >= 1) 
+        if( parseInt(parseInt numero /5) >= 1) 
         {
-            let nota5 = i++;
+            var nota5 = parseInt numero /5;
+            parseInt numero = parseInt numero - nota5 * 5;
         }
-        if( parseInt(numero /2) >= 1) 
+        if( parseInt(parseInt numero /2) >= 1) 
         {
-            let nota2 = i++;
+            var nota2 = parseInt numero /2;
+            parseInt numero = parseInt numero - nota2 * 2;
         }
-        if( parseInt(numero /1)>= 1) 
+        if( parseInt(parseInt numero /1)>= 1) 
         {
-            let nota1 = i++;
+            var nota1 = (parseInt numero /1);
         }
-
-        document.getElementById('variavel').innerHTML=(`Notas de 100: ${nota100} <br> Notas de 50: ${nota50} <br> Notas de 20: ${nota20} <br> Notas de 10: ${nota10} <br> Notas de 5: ${nota5} <br> Notas de 2: ${nota2} <br> Notas de 1: ${nota1}`);
+        document.getElementById('variavel').innerHTML = `Notas de 100: ${nota100} <br> Notas de 50: ${nota50} <br> Notas de 20: ${nota20} <br> Notas de 10: ${nota10} <br> Notas de 5: ${nota5} <br> Notas de 2: ${nota2} <br> Notas de 1: ${nota1}`;
     </script>
 </body>
 </html>

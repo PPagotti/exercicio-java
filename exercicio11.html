@@ -7,43 +7,76 @@
 </head>
 <body>
     <p id="variavel"></p>
-    <a href="index.html">Voltar pro Início</a>
     <script>
            
         var numero = parseInt(prompt("Digite um valor em Reais: "));
         if( parseInt(numero /100) >= 1) 
         {
             var nota100 = parseInt(numero /100);
-            parseInt numero = parseInt(numero - nota100 * 100);
+            numero = parseInt(numero - nota100 * 100);
         }
+        else if (parseInt(numero /100) < 1)
+        {
+            var nota100 = 0;
+        }
+        
         if( parseInt(numero/50) >= 1) 
         {
             var nota50 = parseInt( numero /50);
-            parseInt numero = parseInt (numero - nota50 * 50);
+           numero = parseInt (numero - nota50 * 50);
         }
+        else if (parseInt(numero /50) < 1)
+        {
+            var nota50 = 0;
+        }
+
         if( parseInt(numero/20) >= 1) 
         {
             var nota20 = parseInt( numero /20);
-            parseInt numero = parseInt numero - nota20 * 20;
+            numero = parseInt (numero - nota20 * 20);
         }
-        if( parseInt(parseInt numero /10) >= 1) 
+        else if (parseInt(numero /20) < 1)
         {
-            var nota10 = parseInt numero / 10;
-            parseInt numero = parseInt numero - nota10 * 10;
+            var nota20 = 0;
         }
-        if( parseInt(parseInt numero /5) >= 1) 
+
+        if( parseInt(numero /10) >= 1) 
         {
-            var nota5 = parseInt numero /5;
-            parseInt numero = parseInt numero - nota5 * 5;
+            var nota10 = parseInt (numero / 10);
+            numero = parseInt (numero - nota10 * 10);
         }
-        if( parseInt(parseInt numero /2) >= 1) 
+        else if (parseInt(numero /10) < 1)
         {
-            var nota2 = parseInt numero /2;
-            parseInt numero = parseInt numero - nota2 * 2;
+            var nota10 = 0;
         }
-        if( parseInt(parseInt numero /1)>= 1) 
+
+        if( parseInt(numero /5) >= 1) 
         {
-            var nota1 = (parseInt numero /1);
+            var nota5 = parseInt (numero /5);
+            numero = parseInt (numero - nota5 * 5);
+        }
+        else if (parseInt(numero /5) < 1)
+        {
+            var nota5 = 0;
+        }
+
+        if( parseInt(numero /2) >= 1) 
+        {
+            var nota2 = parseInt (numero /2);
+            numero = parseInt (numero - nota2 * 2);
+        }
+        else if (parseInt(numero /2) < 1)
+        {
+            var nota2 = 0;
+        }
+
+        if( parseInt(numero /1)>= 1) 
+        {
+            var nota1 = parseInt (numero /1);
+        }
+        else if (parseInt(numero /1) < 1)
+        {
+            var nota1= 0;
         }
         document.getElementById('variavel').innerHTML = `Notas de 100: ${nota100} <br> Notas de 50: ${nota50} <br> Notas de 20: ${nota20} <br> Notas de 10: ${nota10} <br> Notas de 5: ${nota5} <br> Notas de 2: ${nota2} <br> Notas de 1: ${nota1}`;
     </script>
